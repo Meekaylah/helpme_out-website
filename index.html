@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Your Video Is Ready</title>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <img src="./images/logo-128x128.png" alt="Logo" id="logo">
+            <h2 id="logo-name">HelpMeOut</h2>
+        </div>
+        <div class="middle-header">
+            <p id="features">Features</p>
+            <p id="works">How It Works</p>
+        </div>
+        <div class="right-header">
+            <p id="started">Get Started</p>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="left-body">
+            <h1 id="big-text">Your video is ready!</h1>
+            <div class="change-name">
+                <p id="name">Name</p>
+                <span>
+                    <p id="video-title"></p>
+                    <img src="./images/edit.svg" alt="Edit" id="edit" onclick="edit()">
+                </span>
+            </div>
+            <label class="reciever-email" for="email">
+                    <input type="email" name="email" id="email" placeholder="enter email of receiver">
+                    <button id="send" type="submit">Send</button>
+            </label>
+            <div class="video-link">
+                <p>Video Url</p>
+                <label id="link-input" for="video-url">
+                    <input type="text" name="video-url" id="video-url" disabled>
+                    <button id="copy"><img src="./images/copy.svg" alt="Copy">Copy</button>
+                </label>
+            </div>
+            <div class="share-part">
+                <p>Share your video</p>
+                <div class="share-buttons">
+                    <button id="facebook"><img src="./images/facebook.svg" alt="Facebook">Facebook</button>
+                    <button id="whatsapp"><img src="./images/whatsapp.svg" alt="Whatsapp">Whatsapp</button>
+                    <button id="telegram"><img src="./images/telegram.svg" alt="Telegram">Telegram</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-body">
+            <div class="top-part">
+                <video src="" id="videoPlayer" controls></video>
+                <span>
+                    <p id="timestamp">--:--</p>
+                    <div id="all-settings">
+                        <div class="play" onclick="videoPlayer.play()">
+                            <img src="./images/play-circle.svg" alt="Play"">
+                            <p id="play">Play</p>
+                        </div>
+                        <div class="volume">
+                            <img src="./images/volume-high.svg" alt="Volume"">
+                            <p id="volume">Volume</p>
+                        </div>
+                        <div class="settings">
+                            <img src="./images/setting-2.svg" alt="Settings"">
+                            <p id="settings">Settings</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="bottom-part">
+                <div class="transcript-title">
+                    <p>Transcript</p>
+                    <select id="lang" disabled>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+                <div class="transcript">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis sapien iaculis, tincidunt mi at, commodo dui. Suspendisse potenti. Etiam a leo vestibulum, blandit leo ut, cursus odio. Vivamus sed aliquam est. Praesent porta orci nec nibh rhoncus euismod. Nullam interdum urna quis libero egestas, ac tempus arcu fermentum. Sed viverra vehicula erat, a interdum dui finibus vel. Maecenas a tristique orci, eu gravida turpis. Integer aliquam tellus in ligula viverra vehicula. Sed eget odio arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean et elit sit amet lacus venenatis sollicitudin vel in nunc.
+                    Donec volutpat id leo ut hendrerit. Etiam suscipit felis eu mattis suscipit. Aenean eu neque et mi porta laoreet eu id enim. Cras sollicitudin, nulla id imperdiet convallis, leo sapien ultricies mi, eget molestie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="account">
+            <p>To ensure the availability and privacy of your video, we recommend saving it to your account.</p>
+            <button>Save Video</button>
+            <p class="login-link">Don't have an account? <a id="create" href="#">Create account</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="left-footer">
+            <img src="./images/footer-logo.svg" alt="Logo" id="footer-logo">
+            <h2 id="footer-logo-name">HelpMeOut</h2>
+        </div>
+        <div class="right-footer">
+            <div class="menu">
+                <h6>Menu</h6>
+                <p>Home</p>
+                <p>Converter</p>
+                <p>How it Works</p>
+            </div>
+            <div class="about-us">
+                <h6>About Us</h6>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="screen-record">
+                <h6>Screen Record</h6>
+                <p>Browser Window</p>
+                <p>Desktop</p>
+                <p>Application</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
