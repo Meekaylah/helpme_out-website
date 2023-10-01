@@ -2,8 +2,24 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo-128x128.png" type="image/x-icon">
     <title>Your Video Is Ready</title>
 </head>
+
+<!-- POPUP -->
+<div class="popup">
+    <section class="box">
+        <div class="close"><img src="./images/close-circle.svg"></div>
+        <img src="./images/success-kite.svg">
+        <p id="emailed">Your video link has been sent to the recepients emails</p>
+        <div class="account-modal">
+            <p>Would you need to view this video later? Save to your account now!</p>
+            <button id="save">Save Video</button>
+            <p class="login-link">Don't have an account? <a id="create" href="#">Create account</a></p>
+        </div>
+    </section>
+</div>
+
 <body>
     <div class="header">
         <div class="left-header">
@@ -29,14 +45,14 @@
                     <img src="./images/edit.svg" alt="Edit" id="edit" onclick="edit()">
                 </span>
             </div>
-            <label class="reciever-email" for="email">
-                    <input type="email" name="email" id="email" placeholder="enter email of receiver">
-                    <button id="send" type="submit">Send</button>
-            </label>
+            <form class="reciever-email" for="email">
+                    <input type="email" target="_blank" name="email" id="email" placeholder="enter email of receiver" required>
+                    <a href="#" id="send" type="submit">Send</a>
+            </form>
             <div class="video-link">
                 <p>Video Url</p>
                 <label id="link-input" for="video-url">
-                    <input type="text" name="video-url" id="video-url" disabled>
+                    <input type="text" name="video-url" id="video-url" readonly>
                     <button id="copy"><img src="./images/copy.svg" alt="Copy">Copy</button>
                 </label>
             </div>
@@ -88,7 +104,7 @@
     <div class="bottom">
         <div class="account">
             <p>To ensure the availability and privacy of your video, we recommend saving it to your account.</p>
-            <button>Save Video</button>
+            <button id="save">Save Video</button>
             <p class="login-link">Don't have an account? <a id="create" href="#">Create account</a></p>
         </div>
     </div>
@@ -120,5 +136,6 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Construct the full video URL
             var lastVideoUrl = 'https://chrome-extension-backend-w4r6.onrender.com/extension/' + lastVideoName;
             console.log(lastVideoUrl);
-            videoLink.setAttribute('placeholder', lastVideoUrl)
+            videoLink.setAttribute('value', lastVideoUrl)
             var lastCharacters = lastVideoUrl.substring(lastVideoUrl.lastIndexOf('/') + 1);
             videoTitle.innerText = lastCharacters;
 

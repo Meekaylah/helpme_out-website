@@ -200,6 +200,7 @@ html{
     font-size: 1rem;
     border: 0;
     font-family: 'Manrope', sans-serif;
+    text-decoration-line: none;
 }
 
 #email{
@@ -208,7 +209,8 @@ html{
     width: 100%;
 }
 
-#email::placeholder{
+#email::placeholder,
+#email{
     color: rgba(67, 67, 67, 0.80);
     font-family: 'Work Sans', sans-serif;
     font-size: 1.125rem;
@@ -251,9 +253,6 @@ html{
     background: transparent;
     border: 0;
     width: 100%;
-}
-
-#video-url::placeholder{
     color: #4B4B4B;
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
@@ -467,3 +466,85 @@ html{
     font-weight: 700;
 }
 
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #999;
+    position: fixed;
+    left: 50%;
+    z-index: 99 !important;
+}
+
+.box{
+    width: 37.375rem;
+    border-radius: 1.5rem;
+    background: #F2F4F7;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    
+}
+
+
+.close{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 4rem 0rem 4rem 30.87rem;
+}
+
+.close:hover{
+    opacity: 0.5;
+}
+
+.box img {
+    margin-top: -8rem;
+    color: #08051E;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#emailed{
+    margin: 0 7.81rem;
+}
+
+.account-modal{
+    margin-bottom: 4rem;
+}
+
+.account-modal p{
+    color: #141414;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 2rem 7.125rem 0rem 7.125rem;
+}
+
+.account-modal button{
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #120B48;
+    margin: 2rem 14rem 0rem 13.5rem;
+    color: #F9F9FF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0;
+}
+
+.account-modal .login-link,
+.account-modal .login-link #create{
+    font-size: 1rem;
+}
