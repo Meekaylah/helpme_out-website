@@ -94,7 +94,6 @@ html{
 
 #videoPlayer{
     height: 24.56rem;
-    /* width: 35.9375rem; */
     width: 100%;
     border-radius: 0.5rem;
     border-bottom-right-radius: 0rem;
@@ -121,7 +120,6 @@ html{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    /* flex-direction: row; */
 }
 
 .change-name span #edit{
@@ -270,7 +268,7 @@ html{
     gap: 0.5rem;
     border-radius: 0.5rem;
     border: 1px solid #120B48;
-    color: var(--primary-main, #120B48);
+    color: #120B48;
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
 }
@@ -433,8 +431,6 @@ html{
 .left-footer {
     display: flex;
     padding: 0.625rem;
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
     align-items: center;
     gap: 0.5rem;
 }
