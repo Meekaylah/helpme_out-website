@@ -29,6 +29,7 @@ btnOpen.addEventListener("click", () => {
 copy.addEventListener("click", () => {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
     navigator.clipboard.writeText(copyText.value);
     alert("Copied text to clipboard ;)");
 })
